@@ -41,5 +41,8 @@
   #container .principal {
     width: 100%;
     border-right: 0px;
+    background-color: #488000;
+    color: white;
+    text-align: center;
   }
 }
