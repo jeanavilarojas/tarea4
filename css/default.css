@@ -74,7 +74,7 @@ p {
   margin-right: 10px;
 }
 
-#primarycontent h2 {
+#primarycontent h1 {
   font-size: 25px;
   line-height: 25px;
   color: #0e0e0e;
@@ -82,7 +82,7 @@ p {
   margin-bottom: 15px;
 }
 
-#primarycontent h3 {
+#primarycontent h2 {
   font-size: 20px;
   line-height: 25px;
   color: #438835;
@@ -107,7 +107,7 @@ p {
   margin-left: 10px;
 }
 
-#secondarycontent h2 {
+#secondarycontent h1 {
   font-size: 25px;
   line-height: 25px;
   color: #0e0e0e;
@@ -116,7 +116,7 @@ p {
   margin-bottom: 15px;
 }
 
-#secondarycontent h3 {
+#secondarycontent h2 {
   font-size: 17px;
   line-height: 25px;
   color: #438835;
