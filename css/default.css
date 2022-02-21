@@ -12,15 +12,16 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: #0e0e0e;
-  line-height: 18px;
 }
 
-a {
+a:link,
+a:visited {
   color: #438835;
   text-decoration: underline;
 }
 
-a:hover {
+a:hover,
+a:active {
   text-decoration: none;
 }
 
@@ -32,7 +33,7 @@ p {
 #outer {
   width: 920px;
   position: relative;
-  overflow: overlay;
+  /*overflow: overlay;*/
   margin: 0 auto;
   background-color: #f9f9f7;
   border: initial;
@@ -42,22 +43,19 @@ p {
 
 #header {
   max-width: 100%;
-  height: 170px;
+  height: 250px;
+  width: 880px;
 }
 
 #banner {
   float: left;
-  width: 880px;
-  height: 250px;
   text-align: left;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px 10px 0px 10px;
 }
 
 #header #banner h1 {
   position: absolute;
-  top: 60px;
+  top: 35px;
   left: 40px;
   color: #488000;
   font-size: 60px;
@@ -70,112 +68,76 @@ p {
   background-color: #fff;
 }
 
-#secondarycontent {
-  width: 25%;
-  float: right;
-}
-
 #primarycontent {
-  width: 74%;
-  float: left;
-  margin-right: 3px;
+  width: 68%;
+  float: right;
+  margin-right: 10px;
 }
 
-#secondarycontent h3 {
-  font-size: 16px;
+#primarycontent h2 {
+  font-size: 25px;
   line-height: 25px;
-  color: #656551;
+  color: #0e0e0e;
   letter-spacing: -1px;
-  background: url(../images/a22.gif) bottom repeat-x;
-  padding: 0px 0px 10px 10px;
-  margin-bottom: 20px;
-}
-
-#secondarycontent .content {
-  padding: 0px 10px 0px 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #primarycontent h3 {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 25px;
-  color: #656551;
+  color: #438835;
   letter-spacing: -1px;
-  background: url(../images/a22.gif) bottom repeat-x;
-  padding: 0px 0px 10px 15px;
-  margin-bottom: 20px;
-}
-
-#primarycontent .post {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 #primarycontent .post .content {
-  padding: 0px 15px 0px 15px;
-  margin-bottom: 20px;
+  line-height: 25px;
+  margin-right: 10px;
   text-align: justify;
-  margin-left: 15px;
 }
 
-#primarycontent .post .footer {
-  background: url(../images/a33.gif) repeat-x;
-  height: 34px;
-  margin-top: 5px;
-  text-align: right;
+#primarycontent .post .content #picA {
+  width: 300px;
+  height: 315px;
 }
 
-#primarycontent .post .footer ul {
-  list-style: none;
+#secondarycontent {
+  width: 28%;
+  float: left;
+  margin-left: 10px;
 }
 
-#primarycontent .post .footer ul li {
-  display: inline;
-  line-height: 14px;
-  padding-left: 17px;
-  margin-left: 25px;
-  background-repeat: no-repeat;
-  background-position: 0px 2px;
+#secondarycontent h2 {
+  font-size: 25px;
+  line-height: 25px;
+  color: #0e0e0e;
+  letter-spacing: -1px;
+  margin-left: 10px;
+  margin-bottom: 15px;
 }
 
-#primarycontent .post .footer ul li.readmore {
-  background-image: url(../images/a38.gif);
+#secondarycontent h3 {
+  font-size: 17px;
+  line-height: 25px;
+  color: #438835;
+  letter-spacing: -1px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+#secondarycontent .post .content {
+  line-height: 25px;
+  margin-left: 10px;
+  text-align: justify;
 }
 
 img.picA {
   position: relative;
-  top: -2px;
-  width: 104px;
-  height: 84px;
-  padding: 4px;
 }
 
 img.floatleft {
   float: left;
-  margin: 0px 14px 3px 0px;
-}
-
-img.picB {
-  position: relative;
-  top: -2px;
-  width: 146px;
-  height: 147px;
-  padding: 7px;
-}
-
-ul.linklist {
-  list-style: none;
-}
-
-ul.linklist li {
-  border-top: solid 1px color #eee;
-  padding-top: 5px;
-  margin: 5px 0px 0px 0px;
-}
-
-ul.linklist li.first {
-  border-top: 0px;
-  padding-top: 0px;
-  margin-top: 0px;
+  margin: 0px 20px 3px 0px;
 }
 
 #footer {
@@ -189,15 +151,8 @@ ul.linklist li.first {
 
 @media only screen and (max-width: 720px) {
   /* For mobile phones: */
-  #header #logo {
+  #header #banner {
     width: 100%;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  /* For mobile phones: */
-  #header #splash {
-    display: none;
   }
 }
 
